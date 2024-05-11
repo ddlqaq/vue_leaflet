@@ -22,14 +22,15 @@
 </template>
 
 <script>
+// import request from '@/utils/request'
 export default {
   name: 'LoginIndex',
   data () {
     return {
       loginForm: {
-        mobile: '',
-        password: '',
-        isAgree: false
+        mobile: '13800000002',
+        password: 'hm#qd@23!',
+        isAgree: true
       },
       loginRules: {
         mobile: [{
@@ -61,9 +62,10 @@ export default {
   },
   methods: {
     login () {
-      this.$refs.form.validate((isOk) => {
+      this.$refs.form.validate(async (isOk) => {
         if (isOk) {
-          alert('校验成功')
+          await this.$store.dispatch('user/login', this.loginForm)
+          this.$router.push('/')
         }
       })
     }

@@ -11,7 +11,7 @@ const mutations = {
     state.token = token // 存放token至state
     setToken(token) // 存放浏览器token
   },
-  removeToken () {
+  removeToken (state) {
     state.token = null // 移除state的token
     removeToken() // 移除浏览器token
   }
@@ -19,12 +19,17 @@ const mutations = {
 
 // 异步
 const actions = {
+  // 登录
   async login (context, data) {
     // 调用登录模块，解构出token
     const token = await login(data)
     // const { data: { data: token } } = objdata
     // 调用setToken，传入token
     context.commit('setToken', token)
+  },
+  // 退出登录
+  loginout (context) {
+    context.commit('removeToken')
   }
 }
 

@@ -83,7 +83,7 @@ body {
 }
 .container {
   /* margin-top: 5%; */
-  height: 1300px;
+  height: 1500px;
   width: 100%;
   background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
 }

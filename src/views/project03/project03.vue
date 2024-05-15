@@ -1,6 +1,6 @@
 <template>
-    <div>项目3</div>
-  </template>
+  <div>003</div>
+</template>
 
 <script>
 export default {
@@ -8,6 +8,6 @@ export default {
 }
 </script>
 
-  <style>
+<style>
 
-  </style>
+</style>

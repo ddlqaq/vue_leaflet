@@ -35,14 +35,10 @@ export default {
 }
 </script>
 
-<style>
-*{
-    margin: 0;
-    padding: 0;
-}
+<style scoped>
 .maxContain{
   width: 2400px;
-  height: 1200px;
+  height: 1300px;
   margin: 20px auto;
   outline: 2px white dashed;
   outline-offset:-10px;
@@ -65,7 +61,5 @@ export default {
 
   .el-main {
     background-color: #E9EEF3;
-    text-align: center;
-    line-height: 160px;
   }
 </style>

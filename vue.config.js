@@ -6,6 +6,9 @@ module.exports = defineConfig({
     proxy: {
       '/api': {
         target: 'https://heimahr.itheima.net/'
+      },
+      '/ddl': {
+        target: 'http://10.165.217.10:8000/'
       }
     }
   }

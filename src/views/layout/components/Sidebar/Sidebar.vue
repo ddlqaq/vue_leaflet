@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="site">
-      <router-link to="/site" class="no-underline">Site</router-link>
+      <router-link to="/site" class="no-underline">WebSite</router-link>
     </div>
     <div class="myProject01">
-      <router-link to="/project01" class="no-underline">Myproject01</router-link>
+      <router-link to="/project01" class="no-underline">Map</router-link>
     </div>
     <div class="myProject02">
-      <router-link to="/project02" class="no-underline">Myproject02</router-link>
+      <router-link to="/project02" class="no-underline">StudentManage</router-link>
     </div>
     <div class="myProject03">
       <router-link to="/project03" class="no-underline">Myproject03</router-link>

@@ -13,6 +13,7 @@ const routes = [
   { path: '/login', component: Login },
   {
     path: '/',
+    redirect: '/project01',
     component: Layout,
     children: [
       { path: '/site', component: Site },

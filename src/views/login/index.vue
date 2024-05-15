@@ -65,7 +65,7 @@ export default {
       this.$refs.form.validate(async (isOk) => {
         if (isOk) {
           await this.$store.dispatch('user/login', this.loginForm)
-          this.$router.push('/')
+          this.$router.push('/project01')
         }
       })
     }
